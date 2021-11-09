@@ -54,6 +54,15 @@
 [![Website](https://telegra.ph/file/3aa63bc94120c24b16f5c.jpg)](https://mizuki.cf)
 
 
+🇱🇰 FORE QR SCAN 👇👇👇👇 QR කේතය ලබාගැනීමට පහත රූපය මත ටච් කරන්න
+
+  ### Simple Method
+  
+  [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@Thejaka/Mizuki#index.js)
+
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/darshanamk/Nethmika)
+     </div>
 ---------------------------------   
 
 ###  Developer :- Nethmika.Broo
