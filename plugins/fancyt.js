@@ -23,7 +23,7 @@ await axios
         } = response.data
 
    
-	const gent = `🎀 𝑸𝒖𝒆𝒆𝒏 𝑴𝒊𝒛𝒖𝒌𝒊 𝑭𝒂𝒏𝒄𝒚 𝑻𝒆𝒙𝒕 🎀\n\n ${result} \n\n 𝚃𝚑𝚊𝚗𝚔 𝚢𝚘𝚞 𝚏𝚘𝚛 𝚞𝚜𝚒𝚗𝚐 𝚀𝚞𝚎𝚎𝚗 𝙼𝚒𝚣𝚞𝚔𝚒`
+	const gent = `🎀 𝑺𝑳𝑲 𝑩𝒐𝒕 𝑭𝒂𝒏𝒄𝒚 𝑻𝒆𝒙𝒕 🎀\n\n ${result} \n\n 𝚃𝚑𝚊𝚗𝚔 𝚢𝚘𝚞 𝚏𝚘𝚛 𝚞𝚜𝚒𝚗𝚐 𝚂𝙻𝙺 𝙱𝚘𝚝`
 	
 	 await message.client.sendMessage(message.jid, gent , MessageType.text, {
           quoted: message.data,
