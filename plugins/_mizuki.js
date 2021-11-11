@@ -1,24 +1,23 @@
-/* Copyright (C) 2021 Sisula / Copyright (C) 2021 Mr.joka.
+/* Copyright (C) 2021 Sisula / Copyright (C) 2021 Nethmika.Broo.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-Mizuki - Mr.joka
+Nethmika - Nethmika.Broo
 */
 
-const Mizuki = require('../events');
+const Nethmika = require('../events');
 const Config = require('../config');
 const {MessageType} = require('@adiwajshing/baileys');
 
 const Language = require('../language');
-const Lang = Language.getString('_mizuki');
+const Lang = Language.getString('_Nethmika');
 
-if (Config.WORKTYPE == 'private') {
+if (Config.WORKTYPE == 'privNethmika{
 
-    Mizuki.addCommand({pattern: 'menu ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+    Nethmika.addCommand({pattern: 'menu ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
         var CMD_HELP = '';
-        if (match[1] === '') {
-            Mizuki.commands.map(
+        if (match[1] === '')Nethmika         Nethmika.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
@@ -62,10 +61,10 @@ if (Config.WORKTYPE == 'private') {
                 }
             );
             await message.client.sendMessage(
-                message.jid,'●▬▬▬ *Mizuki Public* ▬▬▬●\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
+                message.jid,'●▬▬▬ *Nethmika Public* ▬▬▬●\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
         } else {
             var CMD_HELP = '';
-            Mizuki.commands.map(
+            Nethmika.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
@@ -114,17 +113,17 @@ if (Config.WORKTYPE == 'private') {
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid,'●▬▬▬ *Mizuki Public* ▬▬▬●\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
+                message.jid,'●▬▬▬ *Nethmika Public* ▬▬▬●\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
         }
     }));
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Mizuki.addCommand({pattern: 'menu ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+    Nethmika.addCommand({pattern: 'menu ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
         var CMD_HELP = '';
         if (match[1] === '') {
-            Mizuki.commands.map(
+            Nethmika.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
@@ -168,10 +167,10 @@ else if (Config.WORKTYPE == 'public') {
                 }
             );
             await message.client.sendMessage(
-                message.jid,'●▬▬▬ *Mizuki Public* ▬▬▬●\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
+                message.jid,'●▬▬▬ *Nethmika Public* ▬▬▬●\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
         } else {
             var CMD_HELP = '';
-            Mizuki.commands.map(
+            Nethmika.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
@@ -220,7 +219,7 @@ else if (Config.WORKTYPE == 'public') {
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid,'●▬▬▬ *Mizuki Public* ▬▬▬●\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
+                message.jid,'●▬▬▬ *Nethmika Public* ▬▬▬●\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
         }
     }));
 }
