@@ -17,7 +17,7 @@ Mizuki.addCommand({ pattern: 'esthetic ?(.*)', fromMe: workt, desc: E_DESC }, (a
       
         var espic = await axios.get(`https://api.zeks.xyz/api/estetikpic?apikey=thejakamizuki`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer.from(espic.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '© ɪ ᴀᴍ Qᴜᴇᴇɴ ᴍɪᴢᴜᴋɪ'})
+        await message.sendMessage(Buffer.from(espic.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '© ɪ ᴀᴍ 𝐒𝐋𝐊 𝐁𝐨𝐭'})
     
     }));
 
