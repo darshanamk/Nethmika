@@ -55,7 +55,7 @@ function webp2mp4File(path) {
                 const result = 'https:' + $('div#output > p.outfile > video > source').attr('src')
                 resolve({
                     status: true,
-                    message: "𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐛𝐲 𝐐𝐮𝐞𝐞𝐧 𝐌𝐢𝐳𝐮𝐤𝐢",
+                    message: "𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐛𝐲 𝐒𝐋𝐊 𝐁𝐨𝐭",
                     result: result
                 })
             }).catch(reject)
