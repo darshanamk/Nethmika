@@ -2,23 +2,23 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-Mizuki - Mr.joka
+𝐒𝐋𝐊 𝐁𝐨𝐭 - Mr.joka
 */
 
-const Mizuki = require('../events');
+const 𝐒𝐋𝐊 𝐁𝐨𝐭 = require('../events');
 const Config = require('../config');
 const {MessageType} = require('@adiwajshing/baileys');
 
 const Language = require('../language');
-const Lang = Language.getString('_mizuki');
+const Lang = Language.getString('_𝐒𝐋𝐊 𝐁𝐨𝐭');
 
 if (Config.WORKTYPE == 'private') {
 
-    Mizuki.addCommand({pattern: Config.CUS_PANEL + '?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+    𝐒𝐋𝐊 𝐁𝐨𝐭.addCommand({pattern: Config.CUS_PANEL + '?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
         var CMD_HELP = '';
         if (match[1] === '') {
-            Mizuki.commands.map(
+            𝐒𝐋𝐊 𝐁𝐨𝐭.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
@@ -62,10 +62,10 @@ if (Config.WORKTYPE == 'private') {
                 }
             );
             await message.client.sendMessage(
-                message.jid,'●▬▬▬ *Mizuki Public* ▬▬▬●\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
+                message.jid,'●▬▬▬ *𝐒𝐋𝐊 𝐁𝐨𝐭 Public* ▬▬▬●\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
         } else {
             var CMD_HELP = '';
-            Mizuki.commands.map(
+            𝐒𝐋𝐊 𝐁𝐨𝐭.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
@@ -114,17 +114,17 @@ if (Config.WORKTYPE == 'private') {
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid,'●▬▬▬ *Mizuki Public* ▬▬▬●\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
+                message.jid,'●▬▬▬ *𝐒𝐋𝐊 𝐁𝐨𝐭 Public* ▬▬▬●\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
         }
     }));
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Mizuki.addCommand({pattern: Config.CUS_PANEL + '?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+    𝐒𝐋𝐊 𝐁𝐨𝐭.addCommand({pattern: Config.CUS_PANEL + '?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
         var CMD_HELP = '';
         if (match[1] === '') {
-            Mizuki.commands.map(
+            𝐒𝐋𝐊 𝐁𝐨𝐭.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
@@ -168,10 +168,10 @@ else if (Config.WORKTYPE == 'public') {
                 }
             );
             await message.client.sendMessage(
-                message.jid,'●▬▬▬ *Mizuki Public* ▬▬▬●\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
+                message.jid,'●▬▬▬ *𝐒𝐋𝐊 𝐁𝐨𝐭 Public* ▬▬▬●\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
         } else {
             var CMD_HELP = '';
-            Mizuki.commands.map(
+            𝐒𝐋𝐊 𝐁𝐨𝐭.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
@@ -220,7 +220,7 @@ else if (Config.WORKTYPE == 'public') {
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid,'●▬▬▬ *Mizuki Public* ▬▬▬●\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
+                message.jid,'●▬▬▬ *𝐒𝐋𝐊 𝐁𝐨𝐭 Public* ▬▬▬●\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
         }
     }));
 }
