@@ -1,6 +1,6 @@
 /* Codded by @phaticusthiccy
 Telegram: t.me/phaticusthiccy
-Instagram: www.instagram.com/kyrie.baran
+Instagram: www.instagram.comkyrie.baran
 */
 
 const Mizuki = require('../events');
@@ -25,7 +25,7 @@ if (Config.WORKTYPE == 'private') {
     }));
     Mizuki.addCommand({pattern: 'faceai$', fromMe: true, deleteCommand: false, dontAddCommandList: true }, (async (message, match) => {
         var webimage = await axios.get('https://screenshotapi.net/api/v1/screenshot?url=https://thispersondoesnotexist.com/&output=image&width=1000&height=1000', { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ᴍɪᴢᴜᴋɪ*'})
+        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ 𝐒𝐋𝐊 𝐁𝐨𝐭*'})
     }));
     Mizuki.addCommand({pattern: 'animai', fromMe: true, deleteCommand: false, dontAddCommandList: true }, (async (message, match) => {
         var min = 10000; 
@@ -35,7 +35,7 @@ if (Config.WORKTYPE == 'private') {
         await message.sendMessage(
             Buffer.from(IMGWADATA.data),
             MessageType.image, 
-            { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ᴍɪᴢᴜᴋɪ*'}
+            { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ 𝐒𝐋𝐊 𝐁𝐨𝐭*'}
         )
     }));
     Mizuki.addCommand({pattern: 'colorai$', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
@@ -55,7 +55,7 @@ if (Config.WORKTYPE == 'private') {
                     image: fs.createReadStream("./output.jpg"),
                 });
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ᴍɪᴢᴜᴋɪ*'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ 𝐒𝐋𝐊 𝐁𝐨𝐭*'})
             });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -76,7 +76,7 @@ if (Config.WORKTYPE == 'private') {
                     image: fs.createReadStream("./output.jpg"),
                 });
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { thumbnail: base64str, mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ᴍɪᴢᴜᴋɪ*'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { thumbnail: base64str, mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ 𝐒𝐋𝐊 𝐁𝐨𝐭*'})
             });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -97,7 +97,7 @@ if (Config.WORKTYPE == 'private') {
                     image: fs.createReadStream("./output.jpg"),
                 });
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ᴍɪᴢᴜᴋɪ*'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ 𝐒𝐋𝐊 𝐁𝐨𝐭*'})
             });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -125,7 +125,7 @@ if (Config.WORKTYPE == 'private') {
                     image: fs.createReadStream("./output.jpg"),
                 });
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ᴍɪᴢᴜᴋɪ*'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ 𝐒𝐋𝐊 𝐁𝐨𝐭*'})
             });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -155,7 +155,7 @@ if (Config.WORKTYPE == 'private') {
             text: `${match[1]}`,
         });
         var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ᴍɪᴢᴜᴋɪ*'})
+        await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ 𝐒𝐋𝐊 𝐁𝐨𝐭*'})
     }));
     Mizuki.addCommand({pattern: 'toonai$', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
@@ -223,7 +223,7 @@ if (Config.WORKTYPE == 'private') {
                     content: fs.createReadStream("./output.jpg"),
                 });
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ᴍɪᴢᴜᴋɪ*'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ 𝐒𝐋𝐊 𝐁𝐨𝐭*'})
             });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -234,7 +234,7 @@ else if (Config.WORKTYPE == 'public') {
     }));
     Mizuki.addCommand({pattern: 'faceai$', fromMe: false, deleteCommand: false, dontAddCommandList: true }, (async (message, match) => {
         var webimage = await axios.get('https://screenshotapi.net/api/v1/screenshot?url=https://thispersondoesnotexist.com/&output=image&width=1000&height=1000', { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ᴍɪᴢᴜᴋɪ*'})
+        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ 𝐒𝐋𝐊 𝐁𝐨𝐭*'})
     }));
     Mizuki.addCommand({pattern: 'animai$', fromMe: true, deleteCommand: false, dontAddCommandList: true }, (async (message, match) => {
         var min = 10000; 
@@ -244,7 +244,7 @@ else if (Config.WORKTYPE == 'public') {
         await message.sendMessage(
             Buffer.from(IMGWADATA.data),
             MessageType.image, 
-            { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ᴍɪᴢᴜᴋɪ*'}
+            { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ 𝐒𝐋𝐊 𝐁𝐨𝐭*'}
         )
     }));
     Mizuki.addCommand({pattern: 'colorai$', fromMe: false, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
@@ -264,7 +264,7 @@ else if (Config.WORKTYPE == 'public') {
                     image: fs.createReadStream("./output.jpg"),
                 });
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ᴍɪᴢᴜᴋɪ*'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ 𝐒𝐋𝐊 𝐁𝐨𝐭*'})
             });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -285,7 +285,7 @@ else if (Config.WORKTYPE == 'public') {
                     image: fs.createReadStream("./output.jpg"),
                 });
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ᴍɪᴢᴜᴋɪ*'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ 𝐒𝐋𝐊 𝐁𝐨𝐭*'})
             });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -306,7 +306,7 @@ else if (Config.WORKTYPE == 'public') {
                     image: fs.createReadStream("./output.jpg"),
                 });
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ᴍɪᴢᴜᴋɪ*'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ 𝐒𝐋𝐊 𝐁𝐨𝐭*'})
             });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -334,7 +334,7 @@ else if (Config.WORKTYPE == 'public') {
                     image: fs.createReadStream("./output.jpg"),
                 });
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ᴍɪᴢᴜᴋɪ*'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ 𝐒𝐋𝐊 𝐁𝐨𝐭*'})
             });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -364,7 +364,7 @@ else if (Config.WORKTYPE == 'public') {
             text: `${match[1]}`,
         });
         var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ᴍɪᴢᴜᴋɪ*'})
+        await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ 𝐒𝐋𝐊 𝐁𝐨𝐭*'})
     }));
     Mizuki.addCommand({pattern: 'toonai$', fromMe: false, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
@@ -432,7 +432,7 @@ else if (Config.WORKTYPE == 'public') {
                     content: fs.createReadStream("./output.jpg"),
                 });
                 var respoimage = await axios.get(`${resp.output_url}`, { responseType: 'arraybuffer' })
-                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ᴍɪᴢᴜᴋɪ*'})
+                await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ 𝐒𝐋𝐊 𝐁𝐨𝐭*'})
             });
             return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
